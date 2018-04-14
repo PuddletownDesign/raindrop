@@ -1,5 +1,13 @@
-class raindrop {
+const commander = require('commander')
 
+// Converts value to lowercase
+function toLower (v) {
+  return v.toLowerCase()
 }
 
-module.exports = raindrop
+const newsite = () => {
+  console.log('creating new site')
+}
+
+// Export all methods
+module.exports = { newsite }

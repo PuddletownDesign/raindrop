@@ -1,9 +1,10 @@
 Raindrop first steps:
 
 Creating a module:
+    ☐ Create simple command line app
     ☐ create a js module
     ☐ install js module in project and edit
-    ☐ run module with npx
+    ☐ run module with parameters
 
 Executing module with npx:
     ☐ make a create site script

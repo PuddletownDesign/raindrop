@@ -1,0 +1,18 @@
+{
+    "name": "raindrop",
+    "version": "0.0.1",
+    "description": "a simple and highly optimized static site generator",
+    "main": "raindrop.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "bin": {
+        "raindrop": "./cli.js"
+    },
+    "author": "Brent",
+    "license": "ISC",
+    "dependencies": {
+        "chalk": "^2.3.2",
+        "commander": "^2.15.1"
+    }
+}
