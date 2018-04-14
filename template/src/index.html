@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="styles.css" rel="stylesheet">
+<title>Puddletown UI Bootstrap</title>
+</head>
+<body>
+	<img src="images/logo.svg" alt="logo">
+	<h1>Puddletown UI Bootstrap</h1>
+	
+	<p>UI development environment with npm scripts, built with gulp &amp; webpack. Produces fully optimized dist directories for templating.</p>
+
+	<h2>Getting started</h2>
+
+	<p>Install all modules, set up a fresh git repo and start the server.</p>
+
+	<pre><code>npm run setup</code></pre>
+
+	<p>and navigate to:</p>
+
+	<p><a href="http://localhost:8080">http://localhost:8080</a></p>
+
+	<p>The project for dev and testing is built to the <code>build</code> directory. </p>
+
+	<p>Make all of your edits in the <code>src</code> directory.</p>
+
+	<h3>running the application again after stopping server</h3>
+
+	<pre><code>npm start</code></pre>
+
+	<h3>To build the final project build for distribution/ templating</h3>
+
+	<pre><code>npm run build</code></pre>
+
+	<p>The <code>dist</code> directory will be created with the output</p>
+
+	<h2>Editing the CSS</h2>
+
+	<p>SCSS is transpiled into CSS. Just edit the scss files.</p>
+
+	<p>They are structured as follows. Usually the <code>0000.scss</code> is a good place to start. Just trash everything you don't want and build what you do.</p>
+
+	<pre><code>├── _0000.scss # the default style sheet (mobile first) 
+├── _0480.scss # the style sheet that begins at the 480px width breakpoint
+├── _0760.scss # 760px width breakpoint
+├── _0980.scss # etc
+├── _1200.scss
+├── _1400.scss
+├── _1600.scss
+├── includes
+│   ├── _colors.scss # all color info
+│   ├── _fonts.scss # all font info
+│   ├── _mixins.scss # all SASS mixin info
+│   ├── _plugins.scss # just dump all plugin code here
+│   ├── _reset.scss # keeps things clean in between browsers
+│   ├── _responsive.scss # master routing for all the top level scss files
+│   └── _typography.scss # includes with all typography info
+└── styles.scss # master scss routing file
+	</code></pre>
+
+	<h2>Editing the javascript</h2>
+
+	<p>Javascript is bundled by webpack and babel is set for es5 - es7. Trash what you don't need and write exactly what and how you want.</p>
+
+	<h2>To run tests on your javascript using mocha</h2>
+
+	<pre><code>npm test</code></pre>
+
+	<p><strong>Enjoy the SASS and bundled javascript!</strong></p>
+
+	<script src="bundle.js"></script>
+</body>
+</html>

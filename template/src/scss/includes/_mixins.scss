@@ -1,0 +1,34 @@
+/* Retina Mixins take css background images and load a version twice or 5 times as large
+	then shrinks the image to it's original size automatically depending if it's for retina display or print.
+	ex usage:
+	.youtubelink {
+
+	}
+
+	note : for all content images in the html use retina.js loaded in with moderinizr.js
+		also print style sheet will stick work fine, they just wont get the high res images if media queries aren't supported
+ */
+/* ---------------------------
+	  Retina Mixin 1x, 2x
+--------------------------- */
+@mixin background-2x($color, $pathandname, $filetype, $x:top, $y:left, $repeat:none) {
+	background: $color url($pathandname + '.' + $filetype) $x $y $repeat;
+	@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 1.5/1), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 1.5dppx) {
+		background: $color url($pathandname + '_2x.' + $filetype) $x $y $repeat;
+		background-size: 50% auto;
+	}
+}
+/* ---------------------------
+Retina & Print image swaps
+--------------------------- */
+@mixin background-5x($color, $pathandname, $filetype, $x:top, $y:left, $repeat:none) {
+	background: $color url($pathandname + '.' + $filetype) $x $y $repeat;
+	@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 1.5/1), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 1.5dppx) {
+		background: $color url($pathandname + '_2x.' + $filetype) $x $y $repeat;
+		background-size: 50% auto;
+	}
+	@media only print {
+		background: $color url($pathandname + '_5x.' + $filetype) $x $y $repeat;
+		background-size: 20% auto;
+	}
+}

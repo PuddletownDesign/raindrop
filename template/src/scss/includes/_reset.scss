@@ -1,0 +1,182 @@
+article,
+aside,
+audio,
+blockquote,
+body,
+canvas,
+caption,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+iframe,
+img,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+p,
+pre,
+section,
+span,
+summary,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+ul,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+input,
+select,
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+caption,
+td,
+th {
+	text-align: left;
+	font-weight: normal;
+}
+
+table,
+td,
+th {
+	vertical-align: middle;
+}
+
+a img,
+abbr,
+acronym,
+fieldset,
+img {
+	border: 0;
+}
+
+a:focus {
+	outline: none;
+}
+
+body {
+	line-height: 1.5;
+}
+
+code,
+pre {
+	font: 115% monospace;
+}
+
+blockquote::before,
+q::before {
+	content: '';
+}
+
+blockquote::after,
+q::after {
+	content: '';
+}
+
+ol,
+ul {
+	padding-left: 1.5em;
+}
+
+article,
+aside,
+audio,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+mark,
+menu,
+nav,
+section,
+summary,
+video {
+	display: block;
+}
+/* em, strong{font-style:normal;font-weight:400;} */
+/* br, hr {display: none;} */
+button,
+iframe,
+img,
+input,
+svg,
+textarea {
+	max-width: 100%;
+}
+
+.error {
+	color: $red;
+	font-weight: bold;
+}
+
+.video {
+	position: relative;
+	padding-bottom: 56.25%;
+	/* 16:9 */
+	padding-top: 25px;
+	height: 0;
+
+	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+button,
+input,
+textarea {
+	width: 98%;
+	padding: 1%;
+}
