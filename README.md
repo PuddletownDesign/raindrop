@@ -10,5 +10,3 @@
 -   Development mode
 -   git deployment
 -   unbeatable build process/ optimization
-
-## Todo
