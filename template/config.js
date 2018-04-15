@@ -1,4 +1,5 @@
 const config = {
+
   //  choose your preferred package manager
   'package-manager': 'npm',
 
@@ -32,10 +33,10 @@ const config = {
     // set up git deployment
     'git': {
 
-      // the url to track src folder changes on github/ development. Also running git push origin master from the source folder will work as expected.
+      // the url to track changes on github/ development
       'github': '',
 
-      // the url of the hooks repo to deploy the final prod folder to
+      // the url to deploy the final prod folder to
       'production': ''
     },
 
@@ -47,4 +48,5 @@ const config = {
     }
   }
 }
+
 module.exports = { config }
