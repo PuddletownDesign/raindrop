@@ -3,8 +3,17 @@ Raindrop first steps:
 Executing module with npx:
     ☐ convert files to html with build
     ☐ load front matter
+    ☐ read config file
+    ☐ Copy file to build destination
 
+Setting up dev process:
+    ☐ Copy files recursively
+    ☐ set up hot reloading
+    ☐ Set up child layouts (partial support)
+    
 Create chronological posts:
+    ☐ Filter posts by front matter date and put in array
+    ☐ create link list with template support
     
 Additional Ideas:
     ☐ Template specification as extra param in new
