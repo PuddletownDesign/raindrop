@@ -1,8 +1,9 @@
 Raindrop first steps:
 
-Executing module with npx:
-    ☐ convert files to html with build
+Setting up basic conversions:
+    ☐ convert files to html with markdown
     ☐ load front matter
+    ☐ load a hbs template
     ☐ read config file
     ☐ Copy file to build destination
 
