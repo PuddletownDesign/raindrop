@@ -56,21 +56,33 @@ _______________________________________________________________
 
 List of Commands:
 
-${chalk.cyan('new <sitename> ')}       Create a new project in the current directory
+Getting started:
 
-${chalk.cyan('write')}                 Enter writing mode in the existing project
-                      all files will be compiled for live preview on save
+${chalk.cyan('new <sitename> (template)')}       
+                  Create a new project in the current directory
+                  (template) is an optional github url
 
-${chalk.cyan('dev')}                   Enter development mode. starts a server with live reload
 
-${chalk.cyan('build')}                 creates a prod directory. compiles and optimizes all files
-                      for deployment
+Inside the folder of an existing project:
 
-${chalk.cyan('deploy')}                deploys the site to live server with various methods
-                      depending on how you have your config.js configured.
+${chalk.cyan('write')}             Enter writing mode in the existing project.
+                  Just kick back, create some markdown files 
+                  and some folders. Live previews enabled.
+
+${chalk.cyan('dev')}               Enter development mode. starts a server with 
+                  live reload, edit CSS and your templates in 
+                  real time.
+
+${chalk.cyan('build')}             creates a prod directory. This will be the 
+                  final folder to upload to your live server.
+
+${chalk.cyan('deploy')}            deploys the site to live server with various
+                  methods depending on how you have your 
+                  config.js configured. Pushes your prod folder up 
+                  to live hosting.
                       
 _______________________________________________________________
 
-${chalk.cyan('Additional Help')}       https://github.com/PuddletownDesign/raindrop
+${chalk.cyan('Additional Help')}   https://github.com/PuddletownDesign/raindrop
   `)
 }
