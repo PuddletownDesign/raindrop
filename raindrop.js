@@ -1,5 +1,3 @@
-const config = require('./config')
-
 const ncp = require('ncp').ncp
 const chalk = require('chalk')
 const path = require('path')
@@ -39,9 +37,11 @@ function copyFiles (name) {
 The next step is to cd into the ${name} directory and run npm setup
 
 ------------------------------
+
 cd ${name}
 
-npm run setup
+npm i
+
 ------------------------------
     `)
   })
