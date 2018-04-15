@@ -35,9 +35,7 @@ ${chalk.blue('Entering development mode')}
 
 //  Build site
 else if (args[0] === 'build') {
-  log(`
-${chalk.blue('Building production site')}
-  `)
+  raindrop.build()
 }
 
 //  Deploy site
@@ -52,7 +50,7 @@ else {
   log(`
 ${chalk.cyan.bold('Puddletown Raindrop')} 💧
 
-Static site generator built in nodejs
+A simple and highly optimized static site generator written in nodejs
 
 _______________________________________________________________
 
@@ -63,8 +61,8 @@ ${chalk.cyan('new <sitename> ')}       Create a new project in the current direc
 ${chalk.cyan('write')}                 Enter writing mode in the existing project
                       all files will be compiled for live preview on save
 
-${chalk.cyan('dev')}                   Enter development mode. starts a server with live reload                      
-  
+${chalk.cyan('dev')}                   Enter development mode. starts a server with live reload
+
 ${chalk.cyan('build')}                 creates a prod directory. compiles and optimizes all files
                       for deployment
 
@@ -73,6 +71,6 @@ ${chalk.cyan('deploy')}                deploys the site to live server with vari
                       
 _______________________________________________________________
 
-${chalk.cyan('Additional Help')}       https://github/PuddletownDesign/puddletown-raindrop
+${chalk.cyan('Additional Help')}       https://github.com/PuddletownDesign/raindrop
   `)
 }
