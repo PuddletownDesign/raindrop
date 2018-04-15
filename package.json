@@ -1,12 +1,25 @@
 {
-    "name": "template",
-    "version": "1.0.0",
-    "description": "",
-    "main": "config.js",
+    "name": "puddletown-raindrop",
+    "version": "0.0.1",
+    "description": "A simple and highly optimized static site generator written in nodejs",
+    "main": "raindrop.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],
-    "author": "",
-    "license": "ISC"
+    "author": "Brent",
+    "license": "ISC",
+    "dependencies": {
+        "chalk": "^2.3.2",
+        "handlebars": "^4.0.11",
+        "js-yaml": "^3.11.0",
+        "marked": "^0.3.19",
+        "ncp": "^2.0.0",
+        "rimraf": "^2.6.2",
+        "smartypants": "0.0.9"
+    },
+    "devDependencies": {
+        "chai": "^4.1.2",
+        "mocha": "^5.1.0"
+    }
 }

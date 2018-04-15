@@ -1,6 +1,9 @@
+const config = require('./config')
+
 const ncp = require('ncp').ncp
 const chalk = require('chalk')
 const path = require('path')
+const md = require('marked')
 
 /*
 Create a new project
@@ -9,17 +12,20 @@ const newproject = function (name) {
   console.log(`${chalk.green('Creating new project: ')} ${name}`)
 
   copyFiles(name)
+}
 
+/* Build out the site */
+const build = function () {
   console.log(`
-The next step is to cd into the ${name} directory and run npm setup
-
-------------------------------
-cd ${name}
-
-npm i
-------------------------------
+${chalk.blue('Building production site')}
   `)
 }
+
+/* Convert Markdown to HTML */
+function markdown (file) {
+  console.log()
+}
+/* Copy files to build */
 
 /*
 Copy template files
@@ -29,7 +35,16 @@ function copyFiles (name) {
     if (err) {
       return console.error(err)
     }
+    console.log(`
+The next step is to cd into the ${name} directory and run npm setup
+
+------------------------------
+cd ${name}
+
+npm run setup
+------------------------------
+    `)
   })
 }
 
-module.exports = {newproject}
+module.exports = { newproject, build }
