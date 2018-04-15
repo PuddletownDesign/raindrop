@@ -21,9 +21,7 @@ ex. ${chalk.blue('raindrop new mysite.com')}
 
 // enter writing mode
 else if (args[0] === 'write') {
-  log(`
-${chalk.blue('Entering writing mode')}
-`)
+  raindrop.write()
 }
 
 // Enter Development mode
@@ -50,20 +48,21 @@ else {
   log(`
 ${chalk.cyan.bold('Puddletown Raindrop')} 💧
 
-A simple and highly optimized static site generator written in nodejs
+A simple and highly optimized static site generator. 
+
+Written by Puddletown Design in nodejs.
 
 _______________________________________________________________
 
 List of Commands:
 
-Getting started:
+${chalk.magenta('Getting started:')}
 
 ${chalk.cyan('new <sitename> (template)')}       
                   Create a new project in the current directory
                   (template) is an optional github url
 
-
-Inside the folder of an existing project:
+${chalk.magenta('Inside the folder of an existing project:')}
 
 ${chalk.cyan('write')}             Enter writing mode in the existing project.
                   Just kick back, create some markdown files 
@@ -73,13 +72,13 @@ ${chalk.cyan('dev')}               Enter development mode. starts a server with
                   live reload, edit CSS and your templates in 
                   real time.
 
-${chalk.cyan('build')}             creates a prod directory. This will be the 
+${chalk.cyan('build')}             Creates a prod directory. This will be the 
                   final folder to upload to your live server.
 
-${chalk.cyan('deploy')}            deploys the site to live server with various
+${chalk.cyan('deploy')}            Deploys the site to live server with various
                   methods depending on how you have your 
-                  config.js configured. Pushes your prod folder up 
-                  to live hosting.
+                  config.js configured. Pushes your prod folder 
+                  up to live hosting.
                       
 _______________________________________________________________
 

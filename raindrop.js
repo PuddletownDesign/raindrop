@@ -1,20 +1,38 @@
-const ncp = require('ncp').ncp
+/*
+Included Libs
+ */
 const chalk = require('chalk')
-const markdown = require('marked')
 
+/*
+Native libs
+ */
 const path = require('path')
 const { promisify } = require('util')
 
+/*
+Set up
+ */
 const pwd = process.cwd()
 const config = require(path.join(pwd) + '/config.js').config
+
+/*
+Build Processes
+ */
+const wp = require('./write-process')
 
 /*
 Create a new project
  */
 const newproject = function (name) {
   console.log(`${chalk.green('Creating new project: ')} ${name}`)
-
   copyFiles(name)
+}
+
+/*
+Writing Mode
+ */
+const write = function () {
+  wp.run()
 }
 
 /* Build out the site */
@@ -54,4 +72,4 @@ npm i
   })
 }
 
-module.exports = { newproject, build }
+module.exports = { newproject, build, write }

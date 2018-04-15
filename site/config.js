@@ -13,7 +13,7 @@ const config = {
 
     // the name of the directory of the build when running local server
     // make sure to gitignore this directory if you change the name
-    'preview': 'test',
+    'server': 'server',
 
     // the name of the directory to be created when building/ deploying site
     'prod': 'build',

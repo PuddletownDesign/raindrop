@@ -1,10 +1,9 @@
 Raindrop first steps:
 
 Setting up basic conversions:
-    ☐ convert files to html with markdown
+    ✔ convert files to html with markdown @done(2018-04-15 18:49) @project(Setting up basic conversions)
     ☐ load front matter
     ☐ load a hbs template
-    ✔ read config file @done(2018-04-15 13:13) @project(Setting up basic conversions)
     ☐ Copy file to build destination
 
 Setting up dev process:
@@ -21,6 +20,7 @@ Additional Ideas:
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+    ✔ read config file @done(2018-04-15 13:13) @project(Setting up basic conversions)
     ✔ make a create site script @done(2018-04-14 20:51) @project(Executing module with npx)
     ✔ copy files @done(2018-04-14 20:51) @project(Executing module with npx)
     ✔ Create simple command line app @done(2018-04-14 20:51) @project(Creating a module)
