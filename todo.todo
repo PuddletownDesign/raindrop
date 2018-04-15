@@ -1,18 +1,19 @@
 Raindrop first steps:
 
-Creating a module:
-    ☐ Create simple command line app
-    ☐ create a js module
-    ☐ install js module in project and edit
-    ☐ run module with parameters
-
 Executing module with npx:
-    ☐ make a create site script
-    ☐ copy files
-    ☐ convert files to html
+    ☐ convert files to html with build
     ☐ load front matter
 
 Create chronological posts:
+    
+Additional Ideas:
+    ☐ Template specification as extra param in new
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+    ✔ make a create site script @done(2018-04-14 20:51) @project(Executing module with npx)
+    ✔ copy files @done(2018-04-14 20:51) @project(Executing module with npx)
+    ✔ Create simple command line app @done(2018-04-14 20:51) @project(Creating a module)
+    ✔ create a js module @done(2018-04-14 20:51) @project(Creating a module)
+    ✔ install js module in project and edit @done(2018-04-14 20:51) @project(Creating a module)
+    ✔ run module with parameters @done(2018-04-14 20:51) @project(Creating a module)

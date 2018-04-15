@@ -1,9 +1,9 @@
 #! /usr/bin/env node
 
+const raindrop = require('./raindrop')
 const chalk = require('chalk')
-
 const log = console.log
-const { spawn } = require('child_process')
+
 const [,, ...args] = process.argv
 
 // Create a new site
@@ -15,9 +15,7 @@ ${chalk.red('You have to enter a name for your project')}
 ex. ${chalk.blue('raindrop new mysite.com')}
     `)
   } else {
-    log(`
-${chalk.green('Creating new project: ')} ${chalk.white(args[1])}  
-    `)
+    raindrop.newproject(args[1])
   }
 }
 
