@@ -4,7 +4,7 @@ Setting up basic conversions:
     ☐ convert files to html with markdown
     ☐ load front matter
     ☐ load a hbs template
-    ☐ read config file
+    ✔ read config file @done(2018-04-15 13:13) @project(Setting up basic conversions)
     ☐ Copy file to build destination
 
 Setting up dev process:

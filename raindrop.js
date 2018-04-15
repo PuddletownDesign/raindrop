@@ -1,7 +1,12 @@
 const ncp = require('ncp').ncp
 const chalk = require('chalk')
+const markdown = require('marked')
+
 const path = require('path')
-const md = require('marked')
+const { promisify } = require('util')
+
+const pwd = process.cwd()
+const config = require(path.join(pwd) + '/config.js').config
 
 /*
 Create a new project
@@ -15,21 +20,23 @@ const newproject = function (name) {
 /* Build out the site */
 const build = function () {
   console.log(`
-${chalk.blue('Building production site')}
+${chalk.blue('Building production site ')}
   `)
+  console.log(config.directories.source)
 }
 
-/* Convert Markdown to HTML */
-function markdown (file) {
-  console.log()
+/*
+Check for root with config file
+ */
+function configExists () {
+
 }
-/* Copy files to build */
 
 /*
 Copy template files
  */
 function copyFiles (name) {
-  ncp(path.join(__dirname, '/template'), path.join(process.cwd(), '/', name), function (err) {
+  ncp(path.join(__dirname, '/template'), path.join(pwd, '/', name), function (err) {
     if (err) {
       return console.error(err)
     }

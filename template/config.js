@@ -8,7 +8,11 @@ const config = {
     // the directory of the source code
     'source': 'src',
 
+    // directory of the templates folder in the source folder
+    'templates': 'templates',
+
     // the name of the directory of the build when running local server
+    // make sure to gitignore this directory if you change the name
     'testing': 'test',
 
     // the name of the directory to be created when building/ deploying site
