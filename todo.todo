@@ -1,15 +1,18 @@
 Raindrop first steps:
 
 Setting up basic conversions:
-    ✔ convert files to html with markdown @done(2018-04-15 18:49) @project(Setting up basic conversions)
-    ☐ load front matter
-    ☐ load a hbs template
-    ☐ Copy file to build destination
+    ✔ load a hbs template @done(2018-04-16 14:30) @project(Setting up basic conversions)
+    ✔ load front matter @done(2018-04-16 15:26) @project(Setting up basic conversions)
+    ☐ load alternate page templates
 
 Setting up dev process:
-    ☐ Copy files recursively
-    ☐ set up hot reloading
     ☐ Set up child layouts (partial support)
+    ☐ set up hot reloading
+    ☐ copy images
+    ☐ copy text
+    ☐ set up scss basic process
+    ☐ set up js process
+    ☐ set up relative sub folder raindrop calls to project root
     
 Create chronological posts:
     ☐ Filter posts by front matter date and put in array
@@ -17,9 +20,15 @@ Create chronological posts:
     
 Additional Ideas:
     ☐ Template specification as extra param in new
+    ☐ Electron app with simple form and site manager
+    ☐ Editor and file window
+    ☐ Template chooser
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+    ✔ Copy file to build destination @done(2018-04-15 19:28) @project(Setting up basic conversions)
+    ✔ Copy files recursively @done(2018-04-15 19:28) @project(Setting up dev process)
+    ✔ convert files to html with markdown @done(2018-04-15 18:49) @project(Setting up basic conversions)
     ✔ read config file @done(2018-04-15 13:13) @project(Setting up basic conversions)
     ✔ make a create site script @done(2018-04-14 20:51) @project(Executing module with npx)
     ✔ copy files @done(2018-04-14 20:51) @project(Executing module with npx)

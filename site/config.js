@@ -3,6 +3,13 @@ const config = {
   //  choose your preferred package manager
   'pm': 'pnpm',
 
+  // Set up site data
+  'site': {
+    'name': 'raindrop template',
+    'author': 'Brent',
+    'email': 'puddletowndesign@gmail.com'
+  },
+
   // Set up directories
   'dirs': {
     // the directory of the source code
@@ -13,10 +20,11 @@ const config = {
 
     // the name of the directory of the build when running local server
     // make sure to gitignore this directory if you change the name
-    'preview': 'test',
+    'server': '.server',
 
     // the name of the directory to be created when building/ deploying site
-    'prod': 'build',
+    // Leaving this value blank will output the site name ex. mysite.com
+    'production': '',
 
     // the name of the folder that holds the content for the site
     'content': 'content',
