@@ -6,7 +6,8 @@ const sass = require('gulp-sass')
 const autoprefixer = require('gulp-autoprefixer')
 const sourcemaps = require('gulp-sourcemaps')
 const bs = require('browser-sync').create()
-const markdown = require('./markdown')
+const pages = require('../pages-converter')
+// const posts = require('../posts-converter')
 
 /*
 Set up
@@ -57,7 +58,7 @@ gulp.task('watch', () => {
 gulp.task('pages', () => {
   gulp.src(mdSources)
     .pipe(tap(function (file, t) {
-      markdown(file.path, config)
+      pages(file.path, config)
     }))
 })
 

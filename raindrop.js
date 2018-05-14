@@ -35,23 +35,15 @@ cd ${name}
 }
 
 /*
-Writing Mode
+Server Mode
  */
-const write = function () {
-  const wp = require('./gulp/write-process')
-  wp.run()
-}
-
-/*
-Dev Mode
- */
-const dev = function () {
-  const d = require('./gulp/dev-process')
-  d.run()
+const server = function () {
+  const server = require('./gulp/server')
+  server.run()
 }
 
 /*
 Check for root with config file
  */
 
-module.exports = { newproject, write, dev }
+module.exports = { newproject, server }

@@ -21,7 +21,7 @@ raindrop new testsite.com
 
 cd testsite.com
 
-raindrop write
+raindrop serve
 ```
 
 Create folders, edit markdown files, add images and script where ever you want.
@@ -80,13 +80,9 @@ new <sitename> (template)
 
 Inside the folder of an existing project:
 
-write             Enter writing mode in the existing project.
+serve             Enter serve mode in the existing project.
                   Just kick back, create some markdown files
                   and some folders. Live previews enabled.
-
-dev               Enter development mode. starts a server with
-                  live reload, edit CSS and your templates in
-                  real time.
 
 build             Creates a prod directory. This will be the
                   final folder to upload to your live server.
@@ -108,12 +104,12 @@ Additional Help   https://github.com/PuddletownDesign/raindrop
 
 ## Raindrop writing mode
 
-In the root of a raindrop project, let's enter writing mode.
+In the root of a raindrop project, let's enter server mode.
 
-Writing mode is for when you are writing articles, adding images. Writing mode does not check for changes in the `src` folder. 
+Writing mode is for when you are writing articles, adding images, site theme, templates, css, or global javascript.
 
 ```bash
-raindrop write
+raindrop serve
 ```
 
 Here you will get a browser window pop up previewing your site. Adding images or creating or editing the markdown files will display changes instantly.
@@ -128,18 +124,6 @@ You're more then welcome to change the locations of any of these directories in 
 ├── pages # Static pages, non chronological
 └── posts # posting pages, chronologically ordered (like a blog)
 ```
-
-## Raindrop development mode
-
-In the root of a raindrop project, let's enter development mode.
-
-Development mode is for when you are developing the site theme, templates, css, or global javascript. Developemnt mode checks for changes in the `src` and the `content` folders. 
-
-```bash
-raindrop dev
-```
-
-Here you will get a browser window pop up previewing your site. Adding images, changing/ adding templates, editing scss or creating or editing the markdown files will display changes instantly.
 
 ## Raindrop build
 

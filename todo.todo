@@ -3,6 +3,7 @@ Raindrop first steps:
 Setting up dev process:
     ☐ Set up child layouts (partial support)
     ☐ set up js process
+    ☐ fix write process (maybe merge write and dev into one with initial gulp build)
     ✔ Write documentation @done(2018-05-14 12:51) @project(Setting up dev process)
     
 Create chronological posts:

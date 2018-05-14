@@ -20,30 +20,25 @@ ex. ${chalk.blue('raindrop new mysite.com')}
 }
 
 // enter writing mode
-else if (args[0] === 'write') {
+else if (args[0] === 'serve') {
   log(`
-${chalk.blue('Entering writing mode')}
+${chalk.blue('Entering server mode')}
   `)
-  raindrop.write()
-}
-
-// Enter Development mode
-else if (args[0] === 'dev') {
-  log(`
-${chalk.blue('Entering development mode')}
-  `)
-  raindrop.dev()
+  raindrop.server()
 }
 
 //  Build site
 else if (args[0] === 'build') {
-  raindrop.build()
+  // raindrop.build()
+  log(`
+  ${chalk.red('Build mode not complete yet')}
+    `)
 }
 
 //  Deploy site
 else if (args[0] === 'deploy') {
   log(`
-${chalk.blue('Deploying to live server')}
+${chalk.red('Deployment mode not complete yet')}
   `)
 }
 
@@ -68,13 +63,9 @@ ${chalk.cyan('new <sitename> (template)')}
 
 ${chalk.magenta('Inside the folder of an existing project:')}
 
-${chalk.cyan('write')}             Enter writing mode in the existing project.
+${chalk.cyan('server')}            Enter server mode in the existing project.
                   Just kick back, create some markdown files 
                   and some folders. Live previews enabled.
-
-${chalk.cyan('dev')}               Enter development mode. starts a server with 
-                  live reload, edit CSS and your templates in 
-                  real time.
 
 ${chalk.cyan('build')}             Creates a prod directory. This will be the 
                   final folder to upload to your live server.
