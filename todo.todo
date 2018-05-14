@@ -1,18 +1,9 @@
 Raindrop first steps:
-
-Setting up basic conversions:
-    ✔ load a hbs template @done(2018-04-16 14:30) @project(Setting up basic conversions)
-    ✔ load front matter @done(2018-04-16 15:26) @project(Setting up basic conversions)
-    ☐ load alternate page templates
-
+    
 Setting up dev process:
     ☐ Set up child layouts (partial support)
-    ☐ set up hot reloading
-    ☐ copy images
-    ☐ copy text
-    ☐ set up scss basic process
     ☐ set up js process
-    ☐ set up relative sub folder raindrop calls to project root
+    ☐ Write documentation
     
 Create chronological posts:
     ☐ Filter posts by front matter date and put in array
@@ -26,6 +17,14 @@ Additional Ideas:
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+    ✔ load a hbs template @done(2018-04-16 14:30) @project(Setting up basic conversions)
+    ✔ load front matter @done(2018-04-16 15:26) @project(Setting up basic conversions)
+    ✔ load alternate page templates @done(2018-05-14 11:33) @project(Setting up basic conversions)
+    ✔ set up hot reloading @done(2018-05-14 11:33) @project(Setting up dev process)
+    ✔ copy images @done(2018-05-14 11:33) @project(Setting up dev process)
+    ✔ copy text @done(2018-05-14 11:33) @project(Setting up dev process)
+    ✔ set up scss basic process @done(2018-05-14 11:33) @project(Setting up dev process)
+    ✔ set up relative sub folder raindrop calls to project root @done(2018-05-14 11:33) @project(Setting up dev process)
     ✔ Copy file to build destination @done(2018-04-15 19:28) @project(Setting up basic conversions)
     ✔ Copy files recursively @done(2018-04-15 19:28) @project(Setting up dev process)
     ✔ convert files to html with markdown @done(2018-04-15 18:49) @project(Setting up basic conversions)
