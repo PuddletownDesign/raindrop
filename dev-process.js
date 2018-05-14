@@ -18,11 +18,16 @@ const config = require(path.join(pwd, '/config.js')).config
 Input Sources
  */
 const server = path.join(pwd, config.dirs.server)
+const contentDir = path.join(pwd, config.dirs.content)
 const pagesDir = path.join(pwd, config.dirs.pages)
 const srcDir = path.join(pwd, config.dirs.src)
 
 const mdSources = path.join(pagesDir, '**/*.md')
-const fileSources = path.join(pagesDir, '**/*')
+const fileSources = [
+  path.join(contentDir, '**/*.*'),
+  path.join(pagesDir, '**/*.*'),
+  path.join(srcDir, '**/*.*')
+]
 const cssSources = path.join(srcDir, 'scss/**/*.scss')
 const jsSources = path.join(srcDir, 'js/**/*.js')
 const templateSources = path.join(srcDir, 'templates/*.hbs')
@@ -37,15 +42,15 @@ function run () {
 
 /* Gulp watch */
 gulp.task('watch', () => {
-  bs.init({
-    server: server,
-    notify: false
-  })
-  gulp.watch(fileSources, ['files']).on('change', bs.reload)
-  gulp.watch(mdSources, ['pages']).on('change', bs.reload)
-  gulp.watch(templateSources, ['pages']).on('change', bs.reload)
-  gulp.watch(cssSources, ['css']).on('change', bs.reload)
-  gulp.watch(jsSources, ['js']).on('change', bs.reload)
+  // bs.init({
+  //   server: server,
+  //   notify: false
+  // })
+  // gulp.watch(fileSources, ['files']).on('change', bs.reload)
+  // gulp.watch(mdSources, ['pages']).on('change', bs.reload)
+  // gulp.watch(templateSources, ['pages']).on('change', bs.reload)
+  // gulp.watch(cssSources, ['css']).on('change', bs.reload)
+  // gulp.watch(jsSources, ['js']).on('change', bs.reload)
 })
 
 /* Compile Markdown files */
@@ -58,7 +63,16 @@ gulp.task('pages', () => {
 
 /* Copy all non markdown files */
 gulp.task('files', () => {
-  let exclude = '**/*.md'
+  let exclude = [
+    '**/*.md',
+    'scss/**/*.*',
+    'templates/**/*.*',
+    'fonts/**/*.*',
+    'js/**/*.*',
+    'drafts/**/*.*',
+    'pages/**/*.*',
+    'posts/**/*.*'
+  ]
   gulp.src(fileSources)
     .pipe(ignore.exclude(exclude))
     .pipe(gulp.dest(server))
