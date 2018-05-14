@@ -1,3 +1,4 @@
-exports.myDateTime = function () {
-  return Date()
+function newproject (name) {
+
 }
+module.exports = newproject

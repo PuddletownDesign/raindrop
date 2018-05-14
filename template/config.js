@@ -1,5 +1,8 @@
 const config = {
 
+  //  choose your preferred package manager
+  'pm': 'pnpm',
+
   // Set up site data
   'site': {
     'name': 'raindrop template',
@@ -20,8 +23,7 @@ const config = {
     'server': '.server',
 
     // the name of the directory to be created when building/ deploying site
-    // Leaving this value blank will output the site name ex. mysite.com
-    'production': '',
+    'prod': 'build',
 
     // the name of the folder that holds the content for the site
     'content': 'content',

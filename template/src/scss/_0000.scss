@@ -1,0 +1,42 @@
+html {}
+
+a {
+	color: $blue;
+
+	&:visited {
+		color: $magenta;
+	}
+}
+
+body {
+	font-size: 100%;
+	padding: 2em;
+	background-color: $white;
+	color: $black;
+	max-width: 55em;
+	margin: 0 auto;
+
+	> img {
+		max-height: 5em;
+	}
+
+	> header {
+		h1 {
+			a {
+				img {}
+			}
+		}
+
+		nav {
+			ul {}
+
+			li {}
+
+			a {}
+		}
+	}
+
+	> section {}
+
+	> footer {}
+}

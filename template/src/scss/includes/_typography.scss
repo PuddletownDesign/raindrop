@@ -1,0 +1,56 @@
+body {
+	font-size: 100%;
+	font-family: 'Lora-Regular', Georgia, 'Times New Roman', Times, serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {}
+
+h1 {
+	font-size: 2.5em;
+	line-height: 1.255em;
+	padding-bottom: .331em;
+	/* 	padding-bottom: .94em; */
+	padding-top: .31em;
+}
+
+h2 {
+	font-size: 1.8em;
+	line-height: 1.33em;
+	padding-top: 1.06em;
+}
+
+h3 {
+	font-size: 1.4em;
+	line-height: 1.57em;
+	padding-top: 1.57em;
+}
+
+h4,
+h5,
+h6 {
+	font-size: 1em;
+	line-height: 1.57em;
+	padding-top: 1.57em;
+	font-weight: bold;
+}
+
+dl,
+ol,
+p,
+pre,
+ul {
+	font-size: 1em;
+	line-height: 1.57em;
+	padding-bottom: 1.2em;
+	padding-top: .47em;
+	/* 	padding-top: 1.97em; */
+}
+
+pre {
+	padding-bottom: 2.2em;
+}

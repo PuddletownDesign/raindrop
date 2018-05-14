@@ -29,6 +29,7 @@ else if (args[0] === 'dev') {
   log(`
 ${chalk.blue('Entering development mode')}
   `)
+  raindrop.dev()
 }
 
 //  Build site
