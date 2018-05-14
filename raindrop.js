@@ -38,7 +38,7 @@ cd ${name}
 Writing Mode
  */
 const write = function () {
-  const wp = require('./write-process')
+  const wp = require('./gulp/write-process')
   wp.run()
 }
 
@@ -46,23 +46,12 @@ const write = function () {
 Dev Mode
  */
 const dev = function () {
-  const d = require('./dev-process')
+  const d = require('./gulp/dev-process')
   d.run()
 }
 
 /*
 Check for root with config file
  */
-
-/*
-Copy template files
- */
-function copyTemplate (name) {
-  return new Promise((resolve, reject) => {
-    ncp(path.join(__dirname, '/template'), path.join(pwd, '/', name), (err) => {
-      err ? reject(err) : resolve(name)
-    })
-  })
-}
 
 module.exports = { newproject, write, dev }

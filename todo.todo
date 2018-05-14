@@ -3,7 +3,7 @@ Raindrop first steps:
 Setting up dev process:
     ☐ Set up child layouts (partial support)
     ☐ set up js process
-    ☐ Write documentation
+    ✔ Write documentation @done(2018-05-14 12:51) @project(Setting up dev process)
     
 Create chronological posts:
     ☐ Filter posts by front matter date and put in array

@@ -12,7 +12,34 @@ Raindrop is a very simple static site generator. The development builds are high
 -   git deployment
 -   unbeatable build process/ optimization
 
-## Getting Started
+## Quick start
+
+```bash
+npm i -g puddletown-raindrop
+
+raindrop new testsite.com
+
+cd testsite.com
+
+raindrop write
+```
+
+Create folders, edit markdown files, add images and script where ever you want.
+
+## Optinally localize content
+
+You can orgainize your content however you like, however raindrop allows you to group all related content together. Like so
+
+```bash
+pages/about/
+├── index.md 
+├── graph.js
+└── image.jpg
+```
+
+That way all contents are grouped and you can reffer to them by only filename with no path.
+
+## Documentation
 
 ### Install node.js
 
@@ -68,6 +95,11 @@ deploy            Deploys the site to live server with various
                   methods depending on how you have your
                   config.js configured. Pushes your prod folder
                   up to live hosting.
+                  
+Hacking:
+
+gulp              Import the gulpfiles into your project directory
+                  and modify the build process to your likiing.
 
 _______________________________________________________________
 

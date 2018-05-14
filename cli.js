@@ -83,6 +83,11 @@ ${chalk.cyan('deploy')}            Deploys the site to live server with various
                   methods depending on how you have your 
                   config.js configured. Pushes your prod folder 
                   up to live hosting.
+            
+${chalk.magenta('Hacking:')}
+
+${chalk.cyan('gulp')}              Import the gulpfiles into your project directory 
+                  and modify the build process to your likiing.
                       
 _______________________________________________________________
 
