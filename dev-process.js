@@ -42,15 +42,15 @@ function run () {
 
 /* Gulp watch */
 gulp.task('watch', () => {
-  // bs.init({
-  //   server: server,
-  //   notify: false
-  // })
-  // gulp.watch(fileSources, ['files']).on('change', bs.reload)
-  // gulp.watch(mdSources, ['pages']).on('change', bs.reload)
-  // gulp.watch(templateSources, ['pages']).on('change', bs.reload)
-  // gulp.watch(cssSources, ['css']).on('change', bs.reload)
-  // gulp.watch(jsSources, ['js']).on('change', bs.reload)
+  bs.init({
+    server: server,
+    notify: false
+  })
+  gulp.watch(fileSources, ['files']).on('change', bs.reload)
+  gulp.watch(mdSources, ['pages']).on('change', bs.reload)
+  gulp.watch(templateSources, ['pages']).on('change', bs.reload)
+  gulp.watch(cssSources, ['css']).on('change', bs.reload)
+  gulp.watch(jsSources, ['js']).on('change', bs.reload)
 })
 
 /* Compile Markdown files */
@@ -67,7 +67,6 @@ gulp.task('files', () => {
     '**/*.md',
     'scss/**/*.*',
     'templates/**/*.*',
-    'fonts/**/*.*',
     'js/**/*.*',
     'drafts/**/*.*',
     'pages/**/*.*',
