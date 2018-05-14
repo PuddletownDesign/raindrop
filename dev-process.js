@@ -31,6 +31,7 @@ const templateSources = path.join(srcDir, 'templates/*.hbs')
 function run () {
   config.runtime = {}
   config.runtime.pwd = pwd
+
   gulp.start('watch', ['pages', 'files', 'js', 'css'])
 }
 

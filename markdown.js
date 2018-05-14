@@ -1,14 +1,24 @@
 const marked = require('marked')
-const chalk = require('chalk')
 const fm = require('front-matter')
 const handlebars = require('handlebars')
 const {readFile, writeFile} = require('./file')
-// const {readFile, writeFile} = require('./file')
-// const config = require('./config')
 
+/* Get the root site url based on the page's location */
+function rootURL (current, config) {
+  let root = current.replace(config.dirs.pages + '/', '')
+  let count = ((root.match(new RegExp('/', 'g')) || []).length)
+  root = ''
+  for (let i = 0, c = count; i < c; i++) {
+    root += '../'
+  }
+  return root
+}
+
+/* Read the markdown file */
 function markdown (path, config) {
   /* Read the markdown file */
   path = path.replace(config.runtime.pwd + '/', '')
+  let root = rootURL(path, config)
   readFile(path, 'utf8')
     .then(data => {
       let output = processMarkdown(data, config)
@@ -18,7 +28,7 @@ function markdown (path, config) {
       /* Read the template file */
       readFile(templatePath, 'utf8')
         .then(data => {
-          createTemplate(path, data, output, dest, config)
+          createTemplate(path, data, output, dest, config, root)
         })
     })
     .catch(error => console.log('Error: ', error))
@@ -28,12 +38,13 @@ function destinationPath (path, config) {
   path = path.replace('.md', '')
   return path
 }
-function createTemplate (templatePath, templateData, pageData, dest, config) {
+function createTemplate (templatePath, templateData, pageData, dest, config, root) {
   let template = handlebars.compile(templateData)
   let compiled = template({
     content: pageData.html,
     page: pageData.frontmatter,
-    site: config
+    site: config,
+    root: root
   })
   writeFile(config.dirs.server + '/' + dest + '.html', compiled)
 }

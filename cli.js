@@ -21,6 +21,9 @@ ex. ${chalk.blue('raindrop new mysite.com')}
 
 // enter writing mode
 else if (args[0] === 'write') {
+  log(`
+${chalk.blue('Entering writing mode')}
+  `)
   raindrop.write()
 }
 
