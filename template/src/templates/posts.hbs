@@ -8,9 +8,17 @@
 </head>
 <body>
 
-<h1><img src="{{root}}images/logo.png" alt="Logo"> {{page.title}}</h1>
+<h1>List of posts</h1>
 
-{{{content}}}
+<ol>
+{{#each data}}
+    <li>
+        <h2><a href="{{path}}">{{{page.title}}}</a></h2>
+        <em>Published on: {{page.date}}</em>
+        <p>{{page.description}}</p>
+    </li>
+{{/each}}
+</ol>
 
 <script src="{{root}}bundle.js"></script>
 </body>

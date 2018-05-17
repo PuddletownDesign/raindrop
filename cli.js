@@ -42,6 +42,13 @@ ${chalk.red('Deployment mode not complete yet')}
   `)
 }
 
+//  Gulp site
+else if (args[0] === 'gulp') {
+  log(`
+${chalk.red('Gulp export mode not complete yet')}
+  `)
+}
+
 // print help
 else {
   log(`

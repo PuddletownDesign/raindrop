@@ -1,7 +1,7 @@
 ---
 template: post
-title: "Site Back Online"
-date: "2017-06-01"
+title: Site Back Online
+date: 2017-06-01
 tags:
     - meta
 ---

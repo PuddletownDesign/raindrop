@@ -1,15 +1,22 @@
 Raindrop first steps:
     
 Setting up dev process:
+    ☐ Integrate Async solution
+    ☐ Debug and gulp multifile issues
+    ☐ set up js process (concatenate solution)
     ☐ Set up child layouts (partial support)
-    ☐ set up js process
-    ☐ fix write process (maybe merge write and dev into one with initial gulp build)
-    ✔ Write documentation @done(2018-05-14 12:51) @project(Setting up dev process)
+    ☐ Register the handlebars-dateformat helper and use it
+
+Build Process:
+    ☐ set up full build process
     
-Create chronological posts:
-    ☐ Filter posts by front matter date and put in array
-    ☐ create link list with template support
+Deployment:
+    ☐ Set up rsync deployment on top of build process
+    ☐ Set up git deployment on top of build process
     
+Gulp Export: 
+    ☐ fix gulp export
+
 Additional Ideas:
     ☐ Template specification as extra param in new
     ☐ Electron app with simple form and site manager
@@ -18,6 +25,13 @@ Additional Ideas:
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+    ✔ Filter posts by front matter date and put in array @done(2018-05-15 19:07) @project(Create chronological posts)
+    ✔ Read array into template @done(2018-05-15 19:07) @project(Create chronological posts)
+    ✔ set up post support for printing post index files @done(2018-05-15 19:07) @project(Create chronological posts)
+    ✔ set up indexing post support by date desc @done(2018-05-15 19:07) @project(Create chronological posts)
+    ✔ create link list with template support @done(2018-05-15 19:07) @project(Create chronological posts)
+    ✔ fix write process (maybe merge write and dev into one with initial gulp build) @done(2018-05-14 15:05) @project(Setting up dev process)
+    ✔ Write documentation @done(2018-05-14 12:51) @project(Setting up dev process)
     ✔ load a hbs template @done(2018-04-16 14:30) @project(Setting up basic conversions)
     ✔ load front matter @done(2018-04-16 15:26) @project(Setting up basic conversions)
     ✔ load alternate page templates @done(2018-05-14 11:33) @project(Setting up basic conversions)

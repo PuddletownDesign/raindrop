@@ -1,7 +1,7 @@
 ---
 template: post
-title: "New Ideas and the Hinterland Of Fail"
-date: "2017-06-02"
+title: New Ideas and the Hinterland Of Fail
+date: 2017-06-02
 tags:
     - meta
     - link

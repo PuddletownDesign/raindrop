@@ -4,7 +4,7 @@ description: home page of the static site generator
 template: page
 ---
 
-# Lorem ipsum dolor sit amet
+[About](about/)
 
 sconsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 

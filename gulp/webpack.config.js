@@ -4,6 +4,8 @@
 const path = require('path')
 const webpack = require('webpack')
 
+const pwd = process.cwd()
+
 /**
  * Webpack config
  */
@@ -15,11 +17,6 @@ module.exports = {
     filename: 'bundle.js'
   },
   module: {
-    loaders: [
-      {
-        test: /\.js$/,
-        loader: 'babel-loader'
-      }
-    ]
+
   }
 }

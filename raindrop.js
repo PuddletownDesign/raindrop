@@ -24,26 +24,42 @@ Create a new project
 const newproject = function (name) {
   copyTemplate(name)
     .then(() => {
-      console.log(`
-Creating ${name}...
-        
-next change directories into your new project:
-        
-cd ${name}
-      `)
+      console.log('site created')
     })
 }
 
 /*
 Server Mode
  */
-const server = function () {
+const server = () => {
   const server = require('./gulp/server')
   server.run()
 }
 
 /*
-Check for root with config file
+Build
  */
+const build = () => {
+}
 
-module.exports = { newproject, server }
+/*
+Deploy
+ */
+const deploy = () => {
+}
+
+/*
+Gulp
+ */
+const gulp = () => {
+}
+
+function copyTemplate (name) {
+  return new Promise((resolve, reject) => {
+    ncp(path.join(__dirname, '/template'), path.join(pwd, '/', name), (err) => {
+      err ? reject(err) : resolve(name)
+    })
+  })
+}
+
+module.exports = { newproject, server, build, deploy, gulp }
